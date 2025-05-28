@@ -10,34 +10,41 @@
 
 	// Constants
 	const values = [
-		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
-		},
-		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
-		},
-		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
-		}
-	];
+  {
+    title: "Radical transparency",
+    description: "We share incident logs, publish engineering deep-dives, and admit mistakes out loud."
+  },
+  {
+    title: "Everyone ships",
+    description: "From founders to new hires, everyone writes code and makes technical decisions."
+  },
+  {
+    title: "Bias for action",
+    description: "We ship features, fix bugs fast, and let developers own their projects."
+  },
+  {
+    title: "Direct support",
+    description: "Engineers help customers directly—we don’t hide behind support layers."
+  },
+  {
+    title: "Low ego, high standards",
+    description: "We debate hard, but egos stay checked. It’s about the work, not titles."
+  }
+];
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://source.unsplash.com/random/?people"
+    title="Run apps everywhere, instantly"
+    subtitle="Fast global infrastructure, built for your CLI"
+    imageSrc="/generated/image-a-diverse-team-of-professionals-working-.webp"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"We started Fly.io because we were tired of the same story: smart developers building great web apps, only to be slowed down by slow clouds, complicated deployment pipelines, and the distance between users and infrastructure. As engineers who’ve spent years building software and working on internet infrastructure, we knew developers deserved better tools to run apps globally—without needing an ops team or playing cloud maze-chase.",
+		"So we built a platform that makes it easy to run full-stack apps and their databases right where your users are—anywhere in the world. Fly.io uses fast-booting micro-VMs to run containerized apps with minimal cold start time, has a global Anycast backbone to route requests instantly, and offers local NVMe-backed volumes to keep data close and performance tight. From the beginning, we focused on giving developers a simple yet powerful CLI-first experience through flyctl, because we use terminals too, and clicking through hidden settings is nobody’s idea of fun.",
+		"Today, teams building everything from Rails monoliths to Elixir LiveView apps, Laravel backends, AI inference services, and multi-region databases are using Fly.io to ship more, scale globally, and worry less. We’re trusted by startups and companies like Supabase, Tailscale, and Mailgun. If your users are everywhere, your app should be too—and Fly.io makes that possible in minutes, straight from your terminal."
 	]}
 />
 
@@ -46,32 +53,29 @@
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		}
-	]}
+  stakeholderType="team"
+  title="Our founders."
+  subtitle="Engineered by developers for developers."
+  stakeholders={[
+    {
+      name: "Kurt Mackey",
+      position: "Co-founder & CEO",
+      bio: "Kurt leads Fly.io with a focus on developer experience, CLI-first workflows, and making global infrastructure simple for teams of all sizes.",
+      image: "/generated/image-a-headshot-of-a-male-founder-in-a-studio.webp"
+    },
+    {
+      name: "Thomas Ptacek",
+      position: "Co-founder",
+      bio: "Thomas designs the core systems security and networking at Fly.io, ensuring reliability, performance, and deep transparency for our users.",
+      image: "/generated/image-a-headshot-of-a-male-founder-wearing-gla.webp"
+    },
+    {
+      name: "Jerome Gravel-Niquet",
+      position: "Co-founder",
+      bio: "Jerome builds Fly.io's stateful infrastructure—volumes, storage, and distributed data—powering databases and persistent workloads everywhere.",
+      image: "/generated/image-a-headshot-of-a-male-founder-with-a-bear.webp"
+    }
+  ]}
 />
 
 <StakeholderGrid
@@ -96,7 +100,8 @@
 
 <!-- CTA Section -->
 <CallToAction
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+  title="Help build the world's developer cloud"
+  subtitle="Join us at Fly.io"
+  description="Fly.io is a team of builders, not buzzword collectors. You'll ship real infrastructure, work directly with smart developers, and solve hard problems every week. Curious? See our open roles or just start a conversation."
+  callsToAction={[{ href: '/careers', label: 'See open roles', variant: 'primary' }, { href: '/contact', label: 'Say hello', variant: 'secondary' }]}
 />

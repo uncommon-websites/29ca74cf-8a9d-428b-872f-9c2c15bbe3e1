@@ -54,107 +54,106 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Fly.io lets you deploy apps, APIs, and databases to fast, isolated micro-VMs around the world. Run workloads close to your users for lower latency, better performance, and less complexity. Pay only for what you use."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			name: "Cormac Reyes",
+			position: "Principal Engineer",
+			company: "Alpine Bay",
+			quote: "With Fly.io, we dropped deploy time from 20 minutes to under 90 seconds. No pipelines. No region-specific tweaks. The Machines API got us global fast without the pain.",
+			image: "/generated/image-a-finnish-man-software-engineer-in-a-mod.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			name: "Mae Levin",
+			position: "Senior Platform Engineer",
+			company: "Oakframe Systems",
+			quote: "We had a region go dark at 3am—and our app kept humming. Fly.io's global failover and request routing handled it. No pager alerts. No lost traffic.",
+			image: "/generated/image-a-brazilian-woman-site-reliability-engin.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			name: "Ezra Kwan",
+			position: "DevOps Lead",
+			company: "SegmentRoll",
+			quote: "Using Fly.io, we brought infra costs down 38% in Q1 just by shifting workloads to scale-to-zero Machines and pulling Postgres in-region. Running smart is finally easy.",
+			image: "/generated/image-a-turkish-man-cto-on-a-call-in-a-tech-co.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="What makes Fly.io different"
+	subtitle="Six core features for builders and teams"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Fast-launching VMs anywhere",
+			description: "Fly Machines boot in milliseconds and run Docker containers on demand in over 35 regions."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Run apps close to your users",
+			description: "Route traffic to the nearest healthy instance with global Anycast networking for low latency worldwide."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Stateful workloads that scale",
+			description: "Attach persistent NVMe storage or use managed Postgres, LiteFS Cloud for SQLite, and Upstash Redis—replicated globally."
+		},
+		{
+			title: "Simple networking, powerful routing",
+			description: "Get private networking (WireGuard), granular control of request routing, and static egress IPs for every machine."
+		},
+		{
+			title: "Inference-ready infrastructure",
+			description: "Deploy GPU machines for AI/ML inference, real-time streaming, and LLMs in North America and Europe."
+		},
+		{
+			title: "Usage-based billing, no surprises",
+			description: "Pay only for what you use, with scale-to-zero, machine reservations, and accidental deployment forgiveness."
 		}
 	]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Global app deployment for real-time experiences",
+			description: "Deploy your app in multiple regions so users always connect to the nearest instance. Great for real-time APIs, multiplayer games, and fully interactive UIs with authentication, caching, and session storage at the edge.",
+			image: "/generated/image-a-diverse-group-of-remote-developers-col.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/globalapp",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Reliable SaaS and databases at global scale",
+			description: "Run applications and critical databases near your customers without losing consistency. With Fly Volumes, LiteFS Cloud, and Managed Postgres, you can build and run full-featured multi-region SaaS—without needing to be a distributed systems expert.",
+			image: "/generated/image-an-engineering-team-working-together-to-.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/globalsaas",
+				label: "Learn more"
 			}
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "AI inference and LLMs close to users",
+			description: "Launch AI inference workloads on GPU-accelerated Fly Machines anywhere in our global network. Reduce inference latency, keep cloud costs predictable, and spin down idle workloads with scale-to-zero.",
+			image: "/generated/image-a-machine-learning-engineer-collaboratin.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/aiinference",
+				label: "Learn more"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+  title="Ship applications that just feel faster"
+  subtitle="Deploy globally, scale instantly, pay only for what you use"
+  description="Launch your app or database close to your users around the world with Fly.io. Micro-VMs start in milliseconds—and you only pay while your code is running."
+  imageSrc="/generated/image-a-cheerful-developer-sitting-at-a-desk-i.webp"
+  callsToAction={[{ href: '/get-started', label: 'Try Fly.io', variant: 'primary' }]}
+/>

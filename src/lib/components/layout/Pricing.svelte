@@ -35,132 +35,210 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Pricing that fits how you build",
+		subtitle = "From solo projects to full-scale platforms — pay as you go, scale when you need, never get surprised.",
+		tierNames = ["Hobby", "Launch", "Scale", "Enterprise"],
 		features = [
 			{
-				name: "Projects",
+				name: "Monthly price",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Hobby: "Free",
+					Launch: "$5/mo",
+					Scale: "$50/mo",
+					Enterprise: "Custom"
 				}
 			},
 			{
-				name: "Team members",
+				name: "vCPU / memory per VM",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Hobby: "Shared · 1 vCPU, 256MB RAM",
+					Launch: "Up to 2 vCPU / 2GB RAM",
+					Scale: "Up to 8 vCPU / 16GB RAM",
+					Enterprise: "Custom — as needed"
 				}
 			},
 			{
-				name: "Storage",
+				name: "Included bandwidth",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Hobby: "100GB/mo",
+					Launch: "200GB/mo",
+					Scale: "1TB/mo",
+					Enterprise: "Volume discounts"
 				}
 			},
 			{
-				name: "API access",
+				name: "Local NVMe storage",
 				tiers: {
-					Starter: false,
-					Pro: true,
+					Hobby: "Up to 3GB",
+					Launch: "Up to 10GB",
+					Scale: "250GB+",
+					Enterprise: "Scalable/unlimited"
+				}
+			},
+			{
+				name: "Regions",
+				tiers: {
+					Hobby: "Single region",
+					Launch: "Multi-region",
+					Scale: "All regions",
+					Enterprise: "Custom/priority regions"
+				}
+			},
+			{
+				name: "Scale-to-zero",
+				tiers: {
+					Hobby: true,
+					Launch: true,
+					Scale: true,
 					Enterprise: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "GPU machines",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Hobby: false,
+					Launch: true,
+					Scale: "Priority access",
+					Enterprise: "Dedicated allocation"
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Private networking (WireGuard)",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Hobby: false,
+					Launch: true,
+					Scale: true,
+					Enterprise: "Advanced + policy controls"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Compliance (SOC2/HIPAA)",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Hobby: false,
+					Launch: "SOC2 reports",
+					Scale: "SOC2 attested",
+					Enterprise: "SOC2 + HIPAA"
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Managed Postgres / Redis",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
+					Hobby: false,
+					Launch: "Single region",
+					Scale: "Multi-region/HA",
+					Enterprise: "Custom setup"
+				}
+			},
+			{
+				name: "Metrics & monitoring",
+				tiers: {
+					Hobby: "Basic",
+					Launch: "Prometheus + Grafana",
+					Scale: "Extended retention",
+					Enterprise: "Custom pipeline integration"
+				}
+			},
+			{
+				name: "Support/response time",
+				tiers: {
+					Hobby: "Community only",
+					Launch: "Email, 1-2 business days",
+					Scale: "Priority, &lt;24h weekday",
+					Enterprise: "24/7, escalation"
+				}
+			},
+			{
+				name: "Team access",
+				tiers: {
+					Hobby: "Personal only",
+					Launch: "Team roles & billing",
+					Scale: "Org admin/permissions",
+					Enterprise: "Custom SSO/SCIM"
 				}
 			},
 			{
 				name: "SLA",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Hobby: false,
+					Launch: "Best effort",
+					Scale: "Target uptime",
+					Enterprise: "Custom, contract-backed"
+				}
+			},
+			{
+				name: "Accidental deploy forgiveness",
+				tiers: {
+					Hobby: false,
+					Launch: true,
+					Scale: true,
+					Enterprise: true
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Hobby",
+				monthlyPrice: 0,
+				yearlyPrice: 0,
+				description: "For personal projects and tinkering. Public apps, limited resources.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Run up to 3 small VMs",
+					"Single region only",
+					"Community forum support",
+					"100 GB/mo bandwidth",
+					"Limited local storage"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start free",
+					href: "/signup?plan=hobby"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Launch",
+				monthlyPrice: 5,
+				yearlyPrice: 4, // discounted for annual
+				description: "For prototypes and MVPs. More power, more regions, core features included.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"Multi-region deploys",
+					"Bigger VMs (up to 2 vCPU)",
+					"Persistent storage up to 10GB",
+					"Prometheus & Grafana monitoring",
+					"Basic business hours support"
 				],
 				cta: {
 					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
+					href: "/signup?plan=launch"
+				}
+			},
+			{
+				name: "Scale",
+				monthlyPrice: 50,
+				yearlyPrice: 40,
+				description: "For production workloads at scale. Best for teams that need global reach, more resources, and priority support.",
+				features: [
+					"All regions, bigger VM limits",
+					"HA networking & private mesh",
+					"1 TB/mo bandwidth included",
+					"Multi-region managed Postgres",
+					"Priority support & uptime targets"
+				],
+				highlight: true,
+				cta: {
+					label: "Start scaling",
+					href: "/signup?plan=scale"
+				}
 			},
 			{
 				name: "Enterprise",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For orgs with advanced compliance, custom regions, guaranteed SLAs, and enterprise support needs.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Custom VM & storage configs",
+					"Dedicated GPU allocations",
+					"SOC2 & HIPAA support",
+					"Custom region exclusivity",
+					"24/7 engineering escalation support"
 				],
 				cta: {
 					label: "Contact sales",

@@ -23,22 +23,22 @@
 		"bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-400 flex items-center justify-center rounded-full";
 
 	const benefits = [
-		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
-		},
-		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
-		},
-		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
-		}
-	];
+  {
+    title: "Global impact, real users",
+    description: "Ship infrastructure that directly powers thousands of apps and millions of real users around the world.",
+    icon: IconGlobe
+  },
+  {
+    title: "Remote, flexible, and supported",
+    description: "Remote-first, async work culture with flexible hours, learning budgets, and autonomy to tackle tough engineering problems.",
+    icon: IconBriefcase
+  },
+  {
+    title: "Growth and ownership",
+    description: "Work with experienced founders and engineers, own critical pieces of the stack, and grow alongside a well-funded and fast-moving team.",
+    icon: IconUsers
+  }
+];
 
 	const openings: JobOpening[] = [
 		// Engineering
@@ -121,78 +121,83 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Danielle Brooks",
+    position: "Engineering Manager",
+    company: "Platform Engineering",
+    quote:
+      "At Fly.io, I feel embraced for who I am. We support each other, challenge ideas, and celebrate every win together. There’s a real sense of belonging here.",
+    image:
+      "/generated/image-a-black-female-engineering-manager-sitti.webp"
+  },
+  {
+    name: "Carlos Martinez",
+    position: "Software Engineer I",
+    company: "Web Services",
+    quote:
+      "My team truly invests in my growth. From day one, I’ve had mentors to learn from, space to ask questions, and the freedom to build real products that matter.",
+    image:
+      "/generated/image-a-latino-male-entry-level-engineer-with-.webp"
+  },
+  {
+    name: "Alex Kim",
+    position: "Product Marketing Associate",
+    company: "Product & Marketing",
+    quote:
+      "I love that my ideas are heard. We work flexibly, move fast, and I get to see my work make a difference. People are encouraged to be themselves—every single day.",
+    image:
+      "/generated/image-an-asian-nonbinary-product-marketer-wear.webp"
+  }
+];
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+  {
+    step: 1,
+    title: "Submit your application",
+    description: "Send us your info—including experience, GitHub, blog posts, or projects that show how you work."
+  },
+  {
+    step: 2,
+    title: "Tackle a real-world challenge",
+    description: "You'll do a short async technical project or code challenge that matches the work you’d do here."
+  },
+  {
+    step: 3,
+    title: "Meet the team",
+    description: "Talk with our engineers or founders about your solutions, ways of working, and how we build together."
+  },
+  {
+    step: 4,
+    title: "Culture chat and offer",
+    description: "Wrap up with a brief culture-fit call. We move fast—expect feedback and a decision within 1–2 weeks."
+  }
+];
 
 	const values = [
-		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
-		},
-		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
-		},
-		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
-		}
-	];
+  {
+    icon: IconGlobe,
+    title: "Remote-first, async by design",
+    description: "We communicate across time zones, bias toward transparency, and support focus work—wherever you are."
+  },
+  {
+    icon: IconHeart,
+    title: "Engineer-driven decisions",
+    description: "Direct access to founders, high-trust projects, and autonomy to ship infrastructure that matters."
+  },
+  {
+    icon: IconUsers,
+    title: "Open collaboration and growth",
+    description: "Work in public (see our infra log!), level up with conferences and learning stipends, and help shape real world infrastructure."
+  }
+];
 </script>
 
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+  title="Build where it matters most"
+  subtitle="Small, honest team. Fast growth, real impact, zero nonsense."
+  imageSrc="/generated/image-a-diverse-group-of-people-working-togeth.webp"
 />
 
 <!-- Why Join Us Section -->
