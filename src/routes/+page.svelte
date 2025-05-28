@@ -7,16 +7,51 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Deploy globally. Run instantly."
+  subtitle="Fly.io runs your app close to users for fast startups, low latency, and high uptime—anywhere in the world."
+  customers={[
+    {
+      name: "Alicia Park",
+      position: "Lead backend engineer, Syncster",
+      imageSrc: "/generated/image-a-korean-woman-software-engineer-in-a-li.webp"
+    },
+    {
+      name: "Mateo Garcia",
+      position: "CTO, Libra Analytics",
+      imageSrc: "/generated/image-a-latino-man-cto-in-a-modern-open-plan-o.webp"
+    },
+    {
+      name: "Priya Deshmukh",
+      position: "Senior platform engineer, Kitewave",
+      imageSrc: "/generated/image-an-indian-woman-platform-engineer-at-her.webp"
+    },
+    {
+      name: "Liam Chen",
+      position: "Head of infrastructure, Glint",
+      imageSrc: "/generated/image-a-chinese-man-it-leader-in-a-data-center.webp"
+    },
+    {
+      name: "Nia Johnson",
+      position: "Staff developer, Flexstage",
+      imageSrc: "/generated/image-a-black-woman-developer-in-an-urban-offi.webp"
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/supabase.com',
+		'https://logo.clearbit.com/tailscale.com',
+		'https://logo.clearbit.com/upstash.com',
+		'https://logo.clearbit.com/tigrisdata.com'
+	]}
+/>
 
 <Summary
 	generating
